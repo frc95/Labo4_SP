@@ -1,0 +1,19 @@
+<mat-toolbar color="primary" class="mat-elevation-z8">
+    <span><mat-icon>home</mat-icon> <app-email-usuario></app-email-usuario></span>
+
+    <div class="spacer"></div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Admin</button>
+        <div class="dropdown-content">
+          <a href="#" routerLink='altaAdmin'>Alta admin</a>
+          <a href="#" routerLink='altaMateria'>Alta materia</a>
+          <a href="#" routerLink='inscribirMateria'>Inscripcion materia</a>
+        </div>
+      </div>
+
+    <a mat-button>Home</a>
+    <a mat-button routerLink=''>Login</a>
+    <a mat-raised-button color="accent" (click)="Logout()">Logout</a>
+
+</mat-toolbar>

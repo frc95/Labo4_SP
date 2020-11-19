@@ -1,0 +1,38 @@
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  
+    
+    <ng-container matColumnDef="nombre">
+      <th mat-header-cell *matHeaderCellDef> Nombre </th>
+      <td mat-cell *matCellDef="let element"> {{element.nombre}} </td>
+    </ng-container>
+  
+    
+    <ng-container matColumnDef="cuatrimestre">
+      <th mat-header-cell *matHeaderCellDef> Cuatrimestre </th>
+      <td mat-cell *matCellDef="let element"> {{element.cuatrimestre}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="cupo">
+      <th mat-header-cell *matHeaderCellDef> Cupo </th>
+      <td mat-cell *matCellDef="let element"> {{element.cupo}} </td>
+    </ng-container>
+    
+    <ng-container matColumnDef="anio">
+      <th mat-header-cell *matHeaderCellDef> Año </th>
+      <td mat-cell *matCellDef="let element"> {{element.anio}} </td>
+    </ng-container>
+  
+    
+    <ng-container matColumnDef="profesor">
+      <th mat-header-cell *matHeaderCellDef> Profesor </th>
+      <td mat-cell *matCellDef="let element"> {{element.profesor}} </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  
+    
+    <tr class="mat-row" *matNoDataRow>
+      <td class="mat-cell" colspan="4">No hay resultados de "{{input.value}}"</td>
+    </tr>
+</table>

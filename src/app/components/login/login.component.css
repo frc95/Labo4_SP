@@ -1,0 +1,35 @@
+:host{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.mat-form-field{
+    width: 100%;
+    min-width: 300px;
+}
+
+.mat-card-title{
+    display: flex;
+    justify-content: center;
+}
+
+.mat-card-content{
+    display: flex;
+    justify-content: center;
+}
+
+.boton{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.alert-danger{
+    color: #721c24;
+    background: #f8d7da;
+    border-color: #f5c6cb;
+    margin-bottom: 5px;
+}
+.container-error{
+    padding: 3px;
+}
