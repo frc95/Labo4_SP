@@ -12,6 +12,7 @@ Se debe usar firebase como base de datos.
 4- Realizar un componente para que el email del usuario siempre esté visible en la página.
 
 5- Solo lo puede ver el administrador( canAvtivate ) administrador:
+
   a. Crear el formulario de alta de un administrador con los siguientes campos: mail, clave Validar los datos.
 
   b. Dar de alta una materia con los siguientes datos (validar los datos): 
